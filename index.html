@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+
+<!-- link my css for color style and background image-->
+<!-- Create crystal images and have them as buttons-->
+
+<!--   https://ia-crystal-collector.herokuapp.com/assets/images/pink_gem.jpg//https://ia-crystal-collector.herokuapp.com/assets/images/blue_gem.jpg//https://ia-crystal-collector.herokuapp.com/assets/images/yellow_gem.jpg//https://ia-crystal-collector.herokuapp.com/assets/images/green_gem.jpg  -->
+<div class="card" style="width: 30rem;">
+  <div class="card-header" style="width: 280px;">
+   <h1>Crystal Collector Game</h1>
+  </div>
+
+  	<div class="instructions">
+		<h3>Game Instructions:</h3>
+		</br>
+	</div>
+		  <ul>
+		    <li>Add a random amount to your score when you click on a gem.</li>
+		    <li>If score matches you win.</li>
+		    <li>But don't go above or else you will lose.</li>
+			<li>These are your Crystals to chose from.</li>
+		</ul>
+		<br>
+		<ul>
+			<li id="green">Green</li>
+			<li id="orange">Orange</li>
+			<li id="purple">Purple</li>
+			<li id="red">Red</li>
+			
+		  </ul>
+	</div>
+		<div class="numberToMatch">
+			<h2>Number To Get:
+				<span id= "randomNumber"></span>
+			</h2>
+		</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			<br>
+			<br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/green_gem.jpg" class=gemImage id="gem1" alt="Green Gem">
+		<img src="assets/images/orange-crystal.png" class=gemImage id="gem2" alt="Orange Gem">
+		<img src="assets/images/purple-crystal.png" class=gemImage id= "gem3" alt="Purple Gem">
+		<img src="assets/images/red_ruby.png.png" class=gemImage id= "gem4" alt="Red Gem">
+	</div>
+	<div class="userTotal">
+		<h1>Total score 
+			<span id="Total"></span>
+		</h1>
+	</div>
+	<script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src= "assets/javascript/gemgame.js"></script>
+</body>
+</html>
+ 
+
+
+
+
