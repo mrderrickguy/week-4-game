@@ -33,7 +33,7 @@ function reset(){
       num3= Math.floor(Math.random()*9)+1;
       num4= Math.floor(Math.random()*9)+1;
       userTotal= 0;
-      $('#finalTotal').text(userTotal);
+      $('#Total').text(userTotal);
       } 
 
 function Hooray(){
@@ -51,10 +51,10 @@ function loser(){
 
 // when a player clicks crystal...
 
-  $("#gem1").on ('click', function(event){
+  $('#gem1').on ('click', function(){
     userTotal = userTotal + num1;
      ("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
+    $('#Total').text(userTotal); 
           //sets win/lose conditions
         if (userTotal === Random){
         winner();
@@ -63,10 +63,10 @@ function loser(){
           loser();
         }   
   })  
-  $('#gem2').on ('click', function(event){
+  $('#gem2').on ("click", function(){
     userTotal = userTotal + num2;
    
-    $('#finalTotal').text(userTotal); 
+    $('#Total').text(userTotal); 
         if (userTotal === Random){
         winner();
         }
@@ -74,10 +74,10 @@ function loser(){
           loser();
         } 
   })  
-  $('#gem3').on ('click', function(event){
+  $('#gem3').on ("click", function(){
     userTotal = userTotal + num3;
 
-    $('#finalTotal').text(userTotal);
+    $('#Total').text(userTotal);
 
           if (userTotal === Random){
           winner();
@@ -86,9 +86,9 @@ function loser(){
           loser();
         } 
   })  
-  $('#gem4').on ('click', function(event){
+  $("#gem4").on ("click", function(){
     userTotal = userTotal + num4;
-    $('#finalTotal').text(userTotal); 
+    $("#Total").text(userTotal); 
       
           if (userTotal === Random){
           winner();
